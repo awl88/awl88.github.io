@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hello World</title>
+    <title>Andrew's Coding Boot Camp Blog</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1><em>Hello World</em></h1>
-    <p><strong>I have a small amount of experience using HTML. I do know so of the basics, but I haven't touched the language in many, many years.</strong></p>
-    <p>Some of my Favorite Movies:</p>
-    <or>
-      <li>Thor: Ragnarok</li>
-      <li>Guardians of the Galaxy</li>
-      <li>Die Hard</li>
-      <li>The Lion King</li>
-    </or>
-    <p><a href="https://github.com/awl88">Andrew Lyon's Github</a></p>
-    <p><img src="https://www.zeldadungeon.net/wp-content/uploads/2013/06/1-2.jpeg"/></p>
-    <table>
-      <tr>
-        <td>Father: Vance</td>
-        <td>Mother: Heidi</td>
-      </tr>
-      <tr>
-        <td>Me: Andrew</td>
-        <td>Brother: Alex</td>
-      </tr>
-    </table>
+    <div class="logo">
+      <img src="./images/Header2.jpg" style="width:100%">
+    </div>
+
+    <div id="navbar">
+      <a href="#home">Home</a>
+      <a href="./BlogHome.html">Blog</a>
+      <a href="./aboutMe.html">About Me</a>
+      <a href="https://github.com/awl88">GitHub</a>
+    </div>
+
+    <div class="content">
+        <p>Welcome to my blog that will follow me through my experience at Skill Distillery's Java coding boot camp. </p>
+    <script type="text/javascript">
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-50px";
+    }
+    }
+    </script>
+    </div>
+    <p>___________</p>
+      <a href="mailto:anlyon99@gmail.com" class="end">Contact Me</a>
   </body>
 </html>
